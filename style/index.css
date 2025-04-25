@@ -1,0 +1,154 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .icons{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 55px;
+  
+}
+
+.navbar .icons button{
+  border: none;
+  background-color: white;
+  margin: 12px;
+}
+
+.navbar .icons button:hover{
+  opacity: 70%;
+}
+
+
+.navbar .icons img{
+  height: 30px; 
+  object-fit: fill;
+}
+
+
+
+.navbar{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-bottom: solid 1px rgb(194, 194, 194);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 25px;
+  margin-bottom: 25px;
+ 
+}
+
+.navbar ul li {
+  margin: 0px 15px;
+  margin-top: 25px; 
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li img {
+  height: 60px; 
+  margin-right: 15px; 
+  margin-left: 10px;
+  object-fit: fill;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+  font-size: 1.2em;
+  transition: 0.2s ease;
+}
+
+.carousel{
+  position: relative;
+  height: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-container{
+  background: red;
+  position: relative;
+  height: 100%;
+
+}
+
+.carousel-track{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel-slide{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel-btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-btn--left{
+  left: -60px;
+}
+
+.carousel-btn--right{
+  right: -60px;
+}
+
+.carousel-btn img{
+  width: 40px;
+}
+
+.carousel-nav{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel-indicator{
+  border: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0,0,0,.3);
+  margin: 0 12px;
+}
+
+.carousel-indicator.current-slide{
+  background: rgba(0,0,0,.5);
+}
