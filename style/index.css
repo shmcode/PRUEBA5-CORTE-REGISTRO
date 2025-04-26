@@ -45,7 +45,7 @@ body{
   font-size: 15px;
   font-weight: 500;
   transition: color 0.3s ease;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .navbar ul li a:hover {
@@ -264,4 +264,12 @@ body{
 
 .is-hidden{
   display: none;
+}
+
+.footer-container{
+  margin-top: 150px;
+  background-color: #1c9aa5;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
