@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style/registro.css">
+    <script src="/js/registro.js" defer></script>
+    <title>REGISTRO</title>
+</head>
+
+ <body>
+
+    <main class="container">
+      
+      <nav class="navbar">
+  
+        <div class="main-container">
+    
+        <ul>
+          <li>
+            <img src="/img/logo-uam.png" alt="uam-logo">
+          </li>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="eventos.html">EVENTOS</a></li>
+          <li><a href="registro.html">REGISTRO</a></li>
+    
+        </ul>
+
+        </div>
+      </nav>
+
+      <div>
+        <h2 class="title">Registro a Conferencias</h2>
+        <p class="secondary-title">Por favor complete el siguiente formulario para registrarse en las conferencias.</p>
+      </div>
+      
+      
+        <form>
+          <div class="form-group">
+              <label for="nombre">
+                Nombre Completo 
+            </label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escriba su nombre completo">
+                <span></span>
+            <br>
+
+            <label for="correo">
+              Correo Electrónico 
+            </label>
+              <input type="text" class="form-control" id="correo" name="correo" placeholder="Escriba sus correo electrónico">
+              <span></span>
+          <br>            
+
+          <div class="form-conferencias">
+            <label for="conferencia">
+                Conferencias
+            </label>
+            <div id="conferencia">
+                <div>
+                    <input type="checkbox" id="github" name="conferencia" value="Uso de GitHub en proyectos colaborativos">
+                    <label for="github">Uso de GitHub en proyectos colaborativos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="docker" name="conferencia" value="Introducción a Docker para entornos de desarrollo">
+                    <label for="docker">Introducción a Docker para entornos de desarrollo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="linux" name="conferencia" value="Configuración básica de servidores Linux">
+                    <label for="linux">Configuración básica de servidores Linux</label>
+                </div>
+          </div>
+        </div>
+           
+            <span id="incompleto" class="incompleto"></span>
+            <button id="registrar" class="btn btn-primary" type="submit">Registrarse</button>
+        </div>
+        </form>
+
+    </main> 
+
+    <footer>
+      <div class="footer-container">
+        <p>2025 &copy Universidad Americana - UAM</p>
+      </div>
+  
+    </footer>
+    
+</body>   
+</html>

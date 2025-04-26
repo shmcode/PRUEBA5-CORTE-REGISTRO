@@ -89,6 +89,7 @@ form label {
   font-weight: 400;
   margin-bottom: 5px;
   display: block; 
+  margin-top: 15px;
 }
 
 form input, form select {
@@ -124,10 +125,6 @@ form button:hover {
   background-color: #137a7f;
 }
 
-input[type="text"]{
-  margin-bottom: 25px;
-}
-
 #conferencia {
   display: flex;
   flex-direction: column;
@@ -156,5 +153,12 @@ input[type="text"]{
   background-color: #1c9aa5;
   color: white;
   padding: 20px;
+  text-align: center;
+}
+
+.error{
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
   text-align: center;
 }
